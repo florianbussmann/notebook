@@ -114,7 +114,7 @@ for more information.
         'argon2-cffi',
         'ipython_genutils',
         'traitlets>=4.2.1',
-        'jupyter_core>=4.6.1',
+        'jupyter_core @ git+https://github.com/florianbussmann/jupyter_core@windows-store-fix#egg=jupyter_core',
         'jupyter_client>=5.3.4',
         'nbformat',
         'nbconvert',

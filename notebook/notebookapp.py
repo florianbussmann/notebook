@@ -1476,7 +1476,7 @@ class NotebookApp(JupyterApp):
     @default('browser_open_file')
     def _default_browser_open_file(self):
         basename = "nbserver-%s-open.html" % os.getpid()
-        return os.path.realpath(os.path.join(self.runtime_dir, basename))
+        return os.path.join(self.runtime_dir, basename)
 
     pylab = Unicode('disabled', config=True,
         help=_("""
